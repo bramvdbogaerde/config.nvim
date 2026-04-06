@@ -6,4 +6,4 @@ require 'config/lsp'
 require 'config/keymap'
 require 'config/statusline'
 require 'config/opts'
-
+require 'config/commands'
