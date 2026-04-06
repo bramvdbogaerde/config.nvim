@@ -60,6 +60,12 @@ vim.lsp.enable('rust_analyzer')
 -- Haskell
 vim.lsp.enable('hls')
 
+-- Typescript
+vim.lsp.enable('ts_ls')
+
+-- Jsonnet
+vim.lsp.enable('jsonnet_ls')
+
 ------------------------------
 -- Diagnostics
 ------------------------------
@@ -83,5 +89,5 @@ vim.keymap.set("n", "<Space>a", vim.lsp.buf.code_action)
 
 return {
 	-- List of languages an LSP is enabled for
-	languages = { "rust", "lua", "haskell" }
+	languages = { "rust", "lua", "haskell", "typescript", "jsonnet" }
 }
