@@ -4,6 +4,6 @@ require 'config/plugins'
 loader.from_config_dir('config/plugins/')
 require 'config/lsp'
 require 'config/keymap'
-require 'statusline'
+require 'config/statusline'
 require 'config/opts'
 
