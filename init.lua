@@ -7,3 +7,4 @@ require 'config/keymap'
 require 'config/statusline'
 require 'config/opts'
 require 'config/commands'
+loader.from_config_dir('config/languages/')

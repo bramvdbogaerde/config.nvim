@@ -12,6 +12,7 @@ The structure of this repository is straightforward:
 
 - `lua/config/plugins.lua` contains the list of plugins, **without** their configuration
 - `lua/config/plugins/` contains the configuration for each plugin as a seperate Lua file. All files in this directory get loaded automatically in lexographical order.
+- `lua/config/languages/` contains language-specific configuration. All files are loaded from this directory in analogous manner to the previous location.
 - `lua/lsp.lua` contains LSP configuration. It explicitly enables a set of programming languages that I personally use. It also sets up the LSP for autocompletion and contains some useful keybinds.
 - `lua/keymap.lua` specifies alternative keybinds.
 
