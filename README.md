@@ -33,3 +33,8 @@ Some keybinds are inherited from Helix:
 ## Requirements
 
 Neovim 0.12+
+
+## License
+
+MIT
+
