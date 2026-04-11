@@ -85,6 +85,8 @@ vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 vim.keymap.set("n", "<Space>k",  vim.lsp.buf.hover, { desc = "Hover docs" })
 -- Execute code action
 vim.keymap.set("n", "<Space>a", vim.lsp.buf.code_action)
+-- Rename identifier under the cursor
+vim.keymap.set("n", "<Space>r", vim.lsp.buf.rename);
 
 ------------------------------
 -- Usage as a module
