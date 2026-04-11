@@ -66,6 +66,9 @@ vim.lsp.enable('ts_ls')
 -- Jsonnet
 vim.lsp.enable('jsonnet_ls')
 
+-- Zig 
+vim.lsp.enable('zls')
+
 ------------------------------
 -- Diagnostics
 ------------------------------
@@ -89,5 +92,5 @@ vim.keymap.set("n", "<Space>a", vim.lsp.buf.code_action)
 
 return {
 	-- List of languages an LSP is enabled for
-	languages = { "rust", "lua", "haskell", "typescript", "jsonnet" }
+	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig" }
 }
