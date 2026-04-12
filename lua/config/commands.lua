@@ -1,3 +1,5 @@
+local loader = require("loader")
+
 ------------------------------
 -- Custom commands
 ------------------------------
@@ -18,3 +20,13 @@ vim.api.nvim_create_user_command("Wd", function()
 end, {})
 
 vim.cmd("cabbrev wd Wd")
+
+-- Shortcut to edit the config and set the root 
+-- directory to the config directory. 
+vim.api.nvim_create_user_command("Config", function()
+    local config_path = vim.fn.stdpath("config")
+    loader.change_root(config_path)
+    vim.cmd("edit " .. config_path .. "/init.lua")
+end, {})
+
+vim.cmd("cabbrev config Config")

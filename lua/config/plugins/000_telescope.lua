@@ -26,14 +26,11 @@ local function buffer_search()
 	builtin.buffers( { sort_mru  = true } )
 end
 
--- Cache the root directory for future use
-local root = loader.find_root()
-
 -- Find files in the project directory
 --
 -- See 'loader.find_root' for how the root directory is determined.
 local function root_find_files()
-	builtin.find_files( { cwd = root } )
+	builtin.find_files( { cwd = loader.root } )
 end
 
 -- Search for symbols found by the LSP in the current buffer

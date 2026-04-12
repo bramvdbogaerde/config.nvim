@@ -55,8 +55,17 @@ local function find_root(cwd)
 	return cwd
 end
 
+-- Cache the root directory for future use
+local root = find_root()
+
+-- Update the cached root directory 
+local function change_root(new_root)
+    M.root = new_root
+end
 
 M.from_dir = from_dir
 M.from_config_dir = from_config_dir
 M.find_root = find_root
+M.root = root
+M.change_root = change_root
 return M
