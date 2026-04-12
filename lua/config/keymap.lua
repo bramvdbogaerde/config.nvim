@@ -21,3 +21,6 @@ vim.keymap.set("x", "X", "k", { desc = "Reduce selection to previous line" })
 -- Comment lines using "ctrl+c" both in visual and normal mode
 vim.keymap.set("n", "<C-c>", "gcc", { remap = true })
 vim.keymap.set("v", "<C-c>", "gc", { remap = true })
+
+-- Redo using Shift+u
+vim.keymap.set("n", "U", "<C-r>", { desc = "Redo previous undo" })
