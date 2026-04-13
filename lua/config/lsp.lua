@@ -69,6 +69,20 @@ vim.lsp.enable('jsonnet_ls')
 -- Zig 
 vim.lsp.enable('zls')
 
+-- Latex 
+vim.lsp.config('texlab', {
+    filetypes = { "latex" , "tex", "plaintex" }
+})
+vim.lsp.enable('texlab')
+
+-- Ltex (LanguageTool support for Latex, Markdown and others)
+vim.lsp.config('ltex', {
+    cmd = {"ltex-ls-plus"},
+    -- all of the file types included in 'lspconfig' as well as 'latex'
+    filetypes = { "bib", "gitcommit", "markdown", "org", "tex", "latex" , "plaintex", "rst", "rnoweb", "pandoc", "quarto", "rmd", "context", "html", "xhtml", "mail", "text" }
+})
+vim.lsp.enable('ltex')
+
 ------------------------------
 -- Diagnostics
 ------------------------------
@@ -94,5 +108,5 @@ vim.keymap.set("n", "<Space>r", vim.lsp.buf.rename);
 
 return {
 	-- List of languages an LSP is enabled for
-	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig" }
+	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex" }
 }
