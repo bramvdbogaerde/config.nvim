@@ -7,4 +7,5 @@ require 'config/keymap'
 require 'config/statusline'
 require 'config/opts'
 require 'config/commands'
+require 'config/copilot'
 loader.from_config_dir('config/languages/')
