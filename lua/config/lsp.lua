@@ -101,6 +101,8 @@ vim.keymap.set("n", "<Space>k",  vim.lsp.buf.hover, { desc = "Hover docs" })
 vim.keymap.set("n", "<Space>a", vim.lsp.buf.code_action)
 -- Rename identifier under the cursor
 vim.keymap.set("n", "<Space>r", vim.lsp.buf.rename);
+-- Expand the error under the cursor in a floating window
+vim.keymap.set("n", "<Space>e", vim.diagnostic.open_float)
 
 ------------------------------
 -- Usage as a module
