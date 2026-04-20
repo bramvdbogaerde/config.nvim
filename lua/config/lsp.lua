@@ -79,9 +79,19 @@ vim.lsp.enable('texlab')
 vim.lsp.config('ltex', {
     cmd = {"ltex-ls-plus"},
     -- all of the file types included in 'lspconfig' as well as 'latex'
-    filetypes = { "bib", "gitcommit", "markdown", "org", "tex", "latex" , "plaintex", "rst", "rnoweb", "pandoc", "quarto", "rmd", "context", "html", "xhtml", "mail", "text" }
+    filetypes = { "bib", "gitcommit", "markdown", "org", "tex", "latex" , "plaintex", "rst", "rnoweb", "pandoc", "quarto", "rmd", "context", "html", "xhtml", "mail", "text", "typst" }
 })
 vim.lsp.enable('ltex')
+
+-- Type latex commands and convert them to unicode automatically
+vim.lsp.config('latex-symbols-lsp', {
+    cmd = { "latex-symbols-lsp", "--stdio"}, 
+    filetypes = { "haskell" }
+})
+vim.lsp.enable("latex-symbols-lsp")
+
+-- Typst
+vim.lsp.enable("tinymist")
 
 ------------------------------
 -- Diagnostics
