@@ -120,5 +120,5 @@ vim.keymap.set("n", "<Space>e", vim.diagnostic.open_float)
 
 return {
 	-- List of languages an LSP is enabled for
-	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex" }
+	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst" }
 }
