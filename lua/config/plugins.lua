@@ -38,6 +38,8 @@ vim.pack.add({
 	-- at some point to or get a similar treatment as the nvim-lspconfig.
 	gh({ src = "nvim-treesitter/nvim-treesitter" }),
 	-- Theme
-	gh({ src = "AlexvZyl/nordic.nvim" })
+	gh({ src = "AlexvZyl/nordic.nvim" }),
+    -- Vimwiki
+    gh({ src = "vimwiki/vimwiki" })
 })
 
