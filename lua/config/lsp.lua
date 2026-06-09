@@ -93,7 +93,13 @@ vim.lsp.enable("latex-symbols-lsp")
 -- Typst
 vim.lsp.enable("tinymist")
 
-------------------------------
+-- Ocaml
+vim.lsp.enable("ocamllsp")
+
+-- Python
+vim.lsp.enable("python")
+
+-----------------------------
 -- Diagnostics
 ------------------------------
 
@@ -120,5 +126,5 @@ vim.keymap.set("n", "<Space>e", vim.diagnostic.open_float)
 
 return {
 	-- List of languages an LSP is enabled for
-	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst" }
+	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst", "ocaml", "python" }
 }
