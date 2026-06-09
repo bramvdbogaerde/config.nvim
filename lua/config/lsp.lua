@@ -58,7 +58,11 @@ vim.lsp.enable('gopls')
 vim.lsp.enable('rust_analyzer')
 
 -- Haskell
-vim.lsp.enable('hls')
+vim.lsp.enable('hls', {
+    settings = {
+        haskell = { checkProject = true }
+    }
+})
 
 -- Typescript
 vim.lsp.enable('ts_ls')
@@ -79,7 +83,7 @@ vim.lsp.enable('texlab')
 vim.lsp.config('ltex', {
     cmd = {"ltex-ls-plus"},
     -- all of the file types included in 'lspconfig' as well as 'latex'
-    filetypes = { "bib", "gitcommit", "markdown", "org", "tex", "latex" , "plaintex", "rst", "rnoweb", "pandoc", "quarto", "rmd", "context", "html", "xhtml", "mail", "text", "typst" }
+    filetypes = { "bib", "gitcommit", "markdown", "org", "tex", "latex" , "plaintex", "rst", "rnoweb", "pandoc", "quarto", "rmd", "context", "html", "xhtml", "mail", "text", "typst"}
 })
 vim.lsp.enable('ltex')
 
@@ -99,7 +103,10 @@ vim.lsp.enable("ocamllsp")
 -- Python
 vim.lsp.enable("python")
 
------------------------------
+-- Scala 
+vim.lsp.enable("metals")
+
+------------------------------
 -- Diagnostics
 ------------------------------
 
@@ -126,5 +133,5 @@ vim.keymap.set("n", "<Space>e", vim.diagnostic.open_float)
 
 return {
 	-- List of languages an LSP is enabled for
-	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst", "ocaml", "python" }
+	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst", "ocaml", "python", "scala" }
 }
