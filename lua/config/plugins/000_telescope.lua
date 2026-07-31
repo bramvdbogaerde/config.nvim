@@ -62,6 +62,7 @@ vim.keymap.set("n", "<Space>f", root_find_files)
 vim.keymap.set("n", "<Space>s", lsp_symbols_current)
 vim.keymap.set("n", "<Space>S", lsp_symbols_all)
 vim.keymap.set("n", "<Space>d", lsp_diagnostic)
+vim.keymap.set("n", "<Leader>a", builtin.live_grep)
 vim.keymap.set("n", "gr", lsp_references)
 
 ------------------------------

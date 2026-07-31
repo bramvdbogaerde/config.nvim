@@ -55,7 +55,18 @@ vim.lsp.config("lua_ls", {
 vim.lsp.enable('gopls')
 
 -- Rust 
+vim.lsp.config('rust_analyzer', {
+    settings = {
+        ['rust-analyzer'] = {
+            checkOnSave = true,
+            check = {
+                command = "clippy"
+            }
+        }
+    }
+})
 vim.lsp.enable('rust_analyzer')
+
 
 -- Haskell
 vim.lsp.enable('hls', {
