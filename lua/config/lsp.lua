@@ -114,10 +114,10 @@ vim.lsp.enable("ocamllsp")
 -- Python
 vim.lsp.enable("python")
 
--- Scala 
+-- Scala
 vim.lsp.enable("metals")
 
-------------------------------
+-----------------------------
 -- Diagnostics
 ------------------------------
 
@@ -143,6 +143,5 @@ vim.keymap.set("n", "<Space>e", vim.diagnostic.open_float)
 ------------------------------
 
 return {
-	-- List of languages an LSP is enabled for
-	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst", "ocaml", "python", "scala" }
+	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst", "ocaml", "python", "scala", "nu" }
 }
