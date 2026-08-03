@@ -40,6 +40,8 @@ vim.pack.add({
 	-- Theme
 	gh({ src = "AlexvZyl/nordic.nvim" }),
     -- Vimwiki
-    gh({ src = "vimwiki/vimwiki" })
+    gh({ src = "vimwiki/vimwiki" }),
+    -- Git signs
+    gh({ src = "lewis6991/gitsigns.nvim" })
 })
 
