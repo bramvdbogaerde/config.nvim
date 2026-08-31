@@ -112,7 +112,7 @@ vim.lsp.enable("tinymist")
 vim.lsp.enable("ocamllsp")
 
 -- Python
-vim.lsp.enable("python")
+vim.lsp.enable("pyright")
 
 -- Scala
 vim.lsp.enable("metals")
