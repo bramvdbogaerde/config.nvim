@@ -117,6 +117,9 @@ vim.lsp.enable("pyright")
 -- Scala
 vim.lsp.enable("metals")
 
+-- Java
+vim.lsp.enable("jdtls")
+
 -----------------------------
 -- Diagnostics
 ------------------------------
