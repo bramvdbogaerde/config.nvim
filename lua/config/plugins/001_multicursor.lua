@@ -82,6 +82,3 @@ vim.keymap.set("i", "<C-d>", M.word_under_cursor)
 vim.keymap.set("n", "<C-d>", M.word_under_cursor)
 
 return M
-
-
-
