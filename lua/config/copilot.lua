@@ -13,6 +13,10 @@ local auto_copilot = { "python" }
 -- and command to manually enable the LSP for that buffer
 ----------------------------------------------------------------
 
+-- vim.lsp.config('copilot', {
+--     cmd = { "/home/bram/code/lsp-ollama/src/server.mjs"}, 
+-- })
+
 vim.api.nvim_create_autocmd("FileType", {
     callback = function(ev)
         local filetype = ev.match
