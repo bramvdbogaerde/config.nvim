@@ -2,7 +2,7 @@
 
 -- Prefix a plugin definition with a particular source
 local function prefix(the_prefix, plugin)
-	if type(plugin) == 'string' then 
+	if type(plugin) == 'string' then
 		-- If the dependency is given as string
 		-- use that string as its name
 		return the_prefix .. plugin
