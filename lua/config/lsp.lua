@@ -118,6 +118,9 @@ vim.lsp.enable("pyright")
 vim.lsp.enable("metals")
 
 -- Java
+vim.lsp.config("jdtls", {
+    root_markers = { "pom.xml", ".classpath" }
+})
 vim.lsp.enable("jdtls")
 
 -----------------------------

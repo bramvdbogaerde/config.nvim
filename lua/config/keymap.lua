@@ -24,3 +24,6 @@ vim.keymap.set("v", "<C-c>", "gc", { remap = true })
 
 -- Redo using Shift+u
 vim.keymap.set("n", "U", "<C-r>", { desc = "Redo previous undo" })
+
+-- Escape/exit the terminal mode through "<Esc>"
+vim.keymap.set('t', '<Esc>', "<C-\\><C-n>",{silent = true})
