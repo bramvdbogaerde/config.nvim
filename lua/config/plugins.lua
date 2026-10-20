@@ -42,6 +42,10 @@ vim.pack.add({
     -- Vimwiki
     gh({ src = "vimwiki/vimwiki" }),
     -- Git signs
-    gh({ src = "lewis6991/gitsigns.nvim" })
+    gh({ src = "lewis6991/gitsigns.nvim" }),
+    -- Lean.nvim
+    gh({ src = "julian/lean.nvim" }),
+    -- Oil.nvim for bulk file operations
+    gh({ src = "stevearc/oil.nvim" })
 })
 
