@@ -141,6 +141,12 @@ vim.lsp.config("jdtls", {
 })
 vim.lsp.enable("jdtls")
 
+-- C 
+vim.lsp.enable("clangd")
+
+-- Nix files
+vim.lsp.enable("nixd")
+
 -----------------------------
 -- Diagnostics
 ------------------------------
@@ -167,5 +173,5 @@ vim.keymap.set("n", "<Space>e", vim.diagnostic.open_float)
 ------------------------------
 
 return {
-	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst", "ocaml", "python", "scala", "nu" }
+	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst", "ocaml", "python", "scala", "nu", "nix" }
 }
