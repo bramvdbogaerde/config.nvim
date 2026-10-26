@@ -24,12 +24,24 @@ vim.lsp.commands["_ltex.addToDictionary"] = function(command, ctx)
   client:notify("workspace/didChangeConfiguration", { settings = s })
 end
 
+local function load_all_dicts()
+  local dicts = {}
+  for name, type in vim.fs.dir(dict_dir) do
+    local lang = name:match("^dictionary%.(.+)%.txt$")
+    if type == "file" and lang then
+      dicts[lang] = vim.fn.readfile(dict_dir .. "/" .. name)
+    end
+  end
+  return dicts
+end
+
 vim.lsp.config("ltex_plus", {
   settings = {
     ltex = {
       language = "en-US",
-      dictionary = { ["en-US"] = load_dict("en-US") },
+      dictionary = load_all_dicts(),
     },
   },
 })
+
 vim.lsp.enable("ltex_plus")
