@@ -173,5 +173,5 @@ vim.keymap.set("n", "<Space>e", vim.diagnostic.open_float)
 ------------------------------
 
 return {
-	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst", "ocaml", "python", "scala", "nu", "nix" }
+	languages = { "rust", "lua", "haskell", "typescript", "jsonnet", "zig", "latex", "typst", "ocaml", "python", "scala", "nu", "nix", "racket", "scheme" }
 }
